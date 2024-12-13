@@ -8,11 +8,6 @@ const playfair = Playfair_Display({
   weight: ["400", "700"],
 });
 
-const greatVibes = Great_Vibes({
-  subsets: ["latin", "latin-ext"],
-  weight: "400",
-});
-
 export const metadata = {
   title: "Sneha's Calligraphy",
   description:
@@ -35,7 +30,7 @@ export default function RootLayout({ children }) {
           <Header />
 
           {/* Main Content */}
-          <main className="container mx-auto px-4 py-8">{children}</main>
+          <main className="mx-auto">{children}</main>
 
           {/* Footer */}
           <footer className="px-8 py-6 bg-gray-100 dark:bg-neutral-800 text-center text-sm">

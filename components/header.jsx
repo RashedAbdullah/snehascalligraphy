@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { ModeToggle } from "./theme-switcher";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,6 +40,7 @@ const Header = () => {
         >
           Contact
         </a>
+        <ModeToggle />
       </nav>
 
       {/* Hamburger Menu Button (for mobile) */}

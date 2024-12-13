@@ -1,23 +1,22 @@
-import React from "react";
+import Image from "next/image";
+import demoImg from "@/public/clgpy.webp";
+import { Great_Vibes, Dancing_Script } from "next/font/google";
+import HeroSection from "@/components/hero-section";
+
+const greatVibes = Great_Vibes({
+  subsets: ["latin", "latin-ext"],
+  weight: "400",
+});
+
+const dancing = Dancing_Script({
+  subsets: ["latin", "latin-ext"],
+  weight: "700",
+});
 
 const HomePage = () => {
   return (
     <div className="space-y-16">
-      {/* Hero Section */}
-      <section className="relative bg-gray-100 dark:bg-neutral-900 py-16 text-center">
-        <div className="container mx-auto px-4">
-          <h1 className="text-5xl font-bold text-teal-600 dark:text-teal-400">
-            Elegance in Every Stroke
-          </h1>
-          <p className="mt-4 text-lg text-gray-600 dark:text-neutral-400">
-            Explore our exquisite Arabic Calligraphy collection, perfect for
-            display, gifting, and custom designs.
-          </p>
-          <button className="mt-8 px-6 py-3 bg-teal-600 text-white rounded-lg hover:bg-teal-700">
-            Order Your Custom Calligraphy
-          </button>
-        </div>
-      </section>
+      <HeroSection />
 
       {/* Featured Products Section */}
       <section className="py-16 bg-white dark:bg-neutral-800">
@@ -36,8 +35,8 @@ const HomePage = () => {
                 key={item}
                 className="bg-gray-100 dark:bg-neutral-900 p-4 rounded-lg shadow-lg text-center"
               >
-                <img
-                  src={`/images/design-${item}.jpg`}
+                <Image
+                  src={demoImg}
                   alt={`Calligraphy Design ${item}`}
                   className="w-full h-60 object-cover rounded-lg"
                 />
@@ -86,8 +85,9 @@ const HomePage = () => {
                 className="bg-gray-100 dark:bg-neutral-900 p-6 rounded-lg shadow-lg"
               >
                 <p className="text-gray-500 dark:text-neutral-400">
-                  "The calligraphy piece I ordered exceeded all expectations.
-                  It's now the highlight of my living room!"
+                  &quot;The calligraphy piece I ordered exceeded all
+                  expectations. It&apos;s now the highlight of my living
+                  room!&quot;
                 </p>
                 <h3 className="mt-4 font-semibold text-teal-600 dark:text-teal-400">
                   - Customer Name {item}
@@ -110,9 +110,9 @@ const HomePage = () => {
           <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
             {/* Example images */}
             {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
-              <img
+              <Image
                 key={item}
-                src={`/images/gallery-${item}.jpg`}
+                src={demoImg}
                 alt={`Gallery Image ${item}`}
                 className="w-full h-40 object-cover rounded-lg"
               />
