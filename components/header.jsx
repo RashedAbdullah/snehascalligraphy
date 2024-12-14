@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { ModeToggle } from "./theme-switcher";
+import Link from "next/link";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,9 +11,11 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between px-6 py-4 shadow-md bg-white dark:bg-neutral-800">
       {/* Logo */}
-      <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-teal-600 dark:text-teal-400">
-        Sneha&apos;s Calligraphy
-      </h1>
+      <Link href="/">
+        <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-teal-600 dark:text-teal-400">
+          Sneha&apos;s Calligraphy
+        </h1>
+      </Link>
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex space-x-6">

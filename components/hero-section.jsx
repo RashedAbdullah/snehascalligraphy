@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const HeroSection = () => {
@@ -19,12 +20,18 @@ const HeroSection = () => {
           </p>
           {/* Call-to-Action Buttons */}
           <div className="mt-10 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-            <button className="px-10 py-4 text-lg font-semibold rounded-lg shadow-lg text-white bg-gradient-to-r from-teal-600 to-teal-500 hover:from-teal-500 hover:to-teal-600 dark:bg-gradient-to-r dark:from-teal-400 dark:to-teal-500 dark:hover:from-teal-300 dark:hover:to-teal-400 transition-transform transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-teal-400">
+            <Link
+              href="/custom"
+              className="px-10 py-4 text-lg font-semibold rounded-lg shadow-lg text-white bg-gradient-to-r from-teal-600 to-teal-500 hover:from-teal-500 hover:to-teal-600 dark:bg-gradient-to-r dark:from-teal-400 dark:to-teal-500 dark:hover:from-teal-300 dark:hover:to-teal-400 transition-transform transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-teal-400"
+            >
               Order Custom Design
-            </button>
-            <button className="px-10 py-4 text-lg font-semibold rounded-lg shadow-lg text-teal-600 bg-white hover:bg-gray-100 dark:text-teal-400 dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-transform transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-teal-400">
+            </Link>
+            <Link
+              href="/gallery"
+              className="px-10 py-4 text-lg font-semibold rounded-lg shadow-lg text-teal-600 bg-white hover:bg-gray-100 dark:text-teal-400 dark:bg-neutral-800 dark:hover:bg-neutral-700 transition-transform transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-teal-400"
+            >
               Explore Gallery
-            </button>
+            </Link>
           </div>
         </div>
       </div>
