@@ -6,16 +6,6 @@ import TestimonialsSection from "@/components/testimonials-section";
 import GallerySection from "@/components/gallery-section";
 import ContactSection from "@/components/contact-section";
 
-const greatVibes = Great_Vibes({
-  subsets: ["latin", "latin-ext"],
-  weight: "400",
-});
-
-const dancing = Dancing_Script({
-  subsets: ["latin", "latin-ext"],
-  weight: "700",
-});
-
 const HomePage = () => {
   return (
     <div className="space-y-16">
