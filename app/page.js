@@ -1,4 +1,3 @@
-import { Great_Vibes, Dancing_Script } from "next/font/google";
 import HeroSection from "@/components/hero-section";
 import FeaturedProductsSection from "@/components/featured-products-section";
 import CustomOrderSection from "@/components/custom-order-section";
