@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         className={`antialiased bg-neutral-50 text-gray-800 dark:bg-neutral-900 dark:text-neutral-200 ${playfair.className}`}
       >
         {/* Theme Provider for dark/light mode */}
-        <ThemeProvider attribute="class" defaultTheme="system">
+        <ThemeProvider attribute="class" defaultTheme="light">
           <Header />
 
           {/* Main Content */}
